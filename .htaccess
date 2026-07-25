@@ -1,0 +1,28 @@
+# Developer: Andy Goldau
+# © 2026 PK-Register by PanelLayer, a brand of Subdomain LTD and managed on behalf of GoMaKe UG. All rights reserved.
+# 
+# DISCLAIMER: This software is provided "as is" without any warranty of any kind.
+# PK-Register is an independent software solution and is not affiliated with, 
+# endorsed by, or sponsored by Plesk International GmbH or its affiliates.
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Protect Sensitive Configuration & Core Files
+<FilesMatch "^(config\.php|config-blank\.php|LICENSE|README\.md|\.gitignore|\.htaccess)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

@@ -1,0 +1,24 @@
+# ── Runtime data & logs ───────────────────────────────────────────────────────
+# Flat-file state produced at runtime – never commit to version control.
+data/used_codes.php
+data/limits/
+logs/
+
+# ── Sensitive configuration ───────────────────────────────────────────────────
+# config.php holds API keys, salts and other secrets.
+# Copy config.php.example (if provided) and fill in your values locally.
+config.php
+
+# ── Generated helper scripts ─────────────────────────────────────────────────
+# One-off scripts used during development/migration.
+*.js
+!*.min.js
+
+# ── OS & Editor artefacts ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+.idea/
+.vscode/
