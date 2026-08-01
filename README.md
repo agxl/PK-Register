@@ -112,8 +112,10 @@ Registration is handled in **two sequential API calls** depending on your config
 
 This project is licensed under the **MIT License**.
 
-> **Developer:** Andy Goldau  
+> **Developer:** [Andy Goldau](https://andy-goldau.de/) <br>
 > **Copyright:** © 2026 PK-Register by PanelLayer, a brand of Subdomain LTD and managed on behalf of GoMaKe UG. All rights reserved.  
+> **Product Page:** [https://pk-register.panellayer.com/](https://pk-register.panellayer.com/)  
+> **Live Demo:** [https://demo.pk-register.panellayer.com/](https://demo.pk-register.panellayer.com/)  
 > **Project:** [https://panellayer.com/](https://panellayer.com/)
 
 The above copyright notice, the developer attribution, and the permission notice must be included in all copies or substantial portions of the Software.
